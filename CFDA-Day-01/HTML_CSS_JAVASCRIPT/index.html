@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Task Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <div class="app-header">
+            <h2>Task & Logic Planner</h2>
+            <p>Kelola list tugas pengembangan sistem kamu secara interaktif.</p>
+        </div>
+
+        <!-- Form Input -->
+        <div class="input-section">
+            <div class="form-group">
+                <input type="text" id="task-input" placeholder="Tulis tugas baru di sini..." autocomplete="off">
+                <button id="add-btn">Tambah</button>
+            </div>
+        </div>
+
+        <!-- Statistik Singkat -->
+        <div class="status-bar">
+            <span>Total Tugas: <strong id="total-count">0</strong></span>
+        </div>
+
+        <!-- Wadah List Tugas -->
+        <ul class="task-list" id="task-list">
+            <!-- Data akan dimasukkan secara dinamis lewat JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

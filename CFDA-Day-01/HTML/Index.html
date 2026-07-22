@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CFDA Labs - Day 1 Modern</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4f46e5, #3b82f6);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.2);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+      
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            background: white;
+            padding: 12px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #eff6ff;
+            color: #2563eb;
+        }
+
+      
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #111827;
+            font-size: 1.5rem;
+            border-left: 4px solid #4f46e5;
+            padding-left: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
+            font-size: 0.95rem;
+        }
+
+     
+        select {
+            padding: 12px;
+            width: 100%;
+            border-radius: 10px;
+            border: 2px solid #e5e7eb;
+            background-color: #f9fafb;
+            font-size: 1rem;
+            color: #4b5563;
+            outline: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        select:focus {
+            border-color: #3b82f6;
+            background-color: white;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+
+     
+        input[type="submit"] {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 12px -2px rgba(16, 185, 129, 0.3);
+            filter: brightness(1.05);
+        }
+
+        input[type="submit"]:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Selamat Datang di CFDA Labs</h1>
+            <p>Latihan Pengembangan Web — Day 1</p>
+        </header>
+
+        <nav>
+            <a href="#profil">Profil</a>
+            <a href="#fitur">Pilihan Kelas</a>
+        </nav>
+
+ 
+        <section id="profil">
+            <h2>Tentang Project</h2>
+            <p>Ini adalah halaman web sederhana yang didesain ulang menggunakan pendekatan antarmuka modern. Mengutamakan ruang bernapas (*padding*), tipografi yang jelas, serta skema warna yang nyaman dipandang untuk latihan dasar HTML & CSS.</p>
+        </section>
+
+        
+        <section id="fitur">
+            <h2>Formulir Minat Penjurusan</h2>
+            <p style="color: #6b7280; margin-bottom: 25px;">Silakan tentukan fokus teknologi yang ingin kamu pelajari lebih dalam di program ini:</p>
+            
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="pilihan-kelas">Silakan Pilih Materi Kelas:</label>
+                    <select id="pilihan-kelas" name="kelas">
+                        <option value="" disabled selected>-- Pilih Materi --</option>
+                        <option value="html-css">HTML & CSS Dasar</option>
+                        <option value="js">JavaScript Modern (ES6+)</option>
+                        <option value="backend">Backend Developer (REST API)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 0;">
+                    <input type="submit" value="Kirim Pilihan Kelas">
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* Reset basic layout & Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Header */
+.main-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-header h1 {
+    color: #0f172a;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.main-header p {
+    color: #64748b;
+    font-size: 1rem;
+}
+
+/* --- LOGIKA RESPONSIF DENGAN CSS GRID --- */
+.grid-container {
+    display: grid;
+    /* Secara default di layar HP: layout akan bertumpuk 1 kolom vertikal */
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Card Styling */
+.card-item {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.card-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Varian warna ikon */
+.blue { background-color: #eff6ff; }
+.green { background-color: #ecfdf5; }
+.purple { background-color: #faf5ff; }
+.orange { background-color: #fff7ed; }
+
+.card-item h3 {
+    color: #1e293b;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.card-item p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* --- MEDIA QUERIES (BREAKPOINTS) --- */
+
+/* Untuk layar ukuran Tablet (Lebar minimal 600px ke atas) */
+@media (min-width: 600px) {
+    .grid-container {
+        /* Layout otomatis berubah menjadi 2 kolom */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-header h1 {
+        font-size: 2.4rem;
+    }
+}
+
+/* Untuk layar ukuran Laptop / PC (Lebar minimal 900px ke atas) */
+@media (min-width: 900px) {
+    .grid-container {
+        /* Layout otomatis berubah menjadi 4 kolom berjejer kesamping */
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
