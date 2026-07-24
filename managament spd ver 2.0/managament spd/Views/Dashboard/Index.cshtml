@@ -1,0 +1,427 @@
+﻿@using ManagementSPD.Models
+@{
+    ViewData["Title"] = "Dashboard";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid">
+    <div class="d-sm-flex align-items-center justify-content-between my-4">
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow-sm h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Transactions</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TotalLicenses</div>
+                        </div>
+                        <div class="col-auto"><i class="fas fa-certificate fa-2x text-gray-300"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow-sm h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Soon Expiring (30 Days)</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.SoonExpiringLicenses</div>
+                        </div>
+                        <div class="col-auto"><i class="fas fa-hourglass-half fa-2x text-gray-300"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow-sm h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Urgent Expiration (7 Days)</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.UrgentExpiringLicenses</div>
+                        </div>
+                        <div class="col-auto"><i class="fas fa-exclamation-circle fa-2x text-gray-300"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow-sm h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Already Expired</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.ExpiredLicenses</div>
+                        </div>
+                        <div class="col-auto"><i class="fas fa-times-circle fa-2x text-gray-300"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow-sm h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                Average Quantity per Transaction
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.AverageQuantity</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-calculator fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card shadow-sm h-100 py-2">
+                <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                Registered Users
+                            </div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">@ViewBag.TotalUsers</div>
+                        </div>
+                        <div class="col-auto">
+                            <i class="fas fa-users fa-2x text-gray-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Item Usage Distribution</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-pie pt-4 pb-2" style="height: 300px;"><canvas id="myPieChart"></canvas></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Staff Performance (Approvals)</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-bar" style="height: 300px;"><canvas id="picChart"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mb-4">
+            <div class="card shadow">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Transaction Trends (Last 12 Months)</h6>
+                </div>
+                <div class="card-body">
+                    <div class="chart-area" style="height: 320px;"><canvas id="trendChart"></canvas></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Top 5 Most Borrowed Items</h6>
+                </div>
+                <div class="card-body">
+                    <div style="height:300px;">
+                        <canvas id="topLicensesChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Yearly Transaction Distribution</h6>
+                </div>
+                <div class="card-body">
+                    <div style="height:300px;">
+                        <canvas id="yearlyChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-6 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Status Overview</h6>
+                </div>
+                <div class="card-body">
+                    <div style="height:350px;">
+                        <canvas id="statusApprovalChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Active vs Expired per Year</h6>
+                </div>
+                <div class="card-body">
+                    <div style="height:350px;">
+                        <canvas id="stackedBarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-7 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Problematic Loans (Expired/Soon)</h6>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.ProblematicLicenses != null && ((List<LoanTransaction>)ViewBag.ProblematicLicenses).Any())
+                    {
+                        <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                            <table class="table table-bordered table-hover table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Item Name</th>
+                                        <th>Due Date</th>
+                                        <th>Rem. Days</th>
+                                        <th>Alert</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        int rowNumProblematic = 1;
+                                    }
+                                    @foreach (var trans in (List<LoanTransaction>)ViewBag.ProblematicLicenses)
+                                    {
+                                        var remainingDays = (trans.DueDate - DateTime.Today).Days;
+                                        <tr>
+                                            <td>@rowNumProblematic</td>
+                                            <td>
+                                                @(trans.License != null ? trans.License.LicenseName : "Unknown")
+                                            </td>
+                                            <td>@trans.DueDate.ToString("yyyy-MM-dd")</td>
+                                            <td>@remainingDays</td>
+                                            <td>
+                                                @if (remainingDays < 0)
+                                                {
+                                                    <span class="badge bg-danger">Expired</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-warning text-dark">Expiring Soon</span>
+                                                }
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-success">@trans.Status</span>
+                                            </td>
+                                        </tr>
+                                        rowNumProblematic++;
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>No problematic loans found.</p>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-5 col-lg-12 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">10 Latest Transactions</h6>
+                </div>
+                <div class="card-body">
+                    @if (ViewBag.LatestLicenses != null && ((List<LoanTransaction>)ViewBag.LatestLicenses).Any())
+                    {
+                        <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                            <table class="table table-bordered table-hover table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Item Name</th>
+                                        <th>Req. Date</th>
+                                        <th>Due Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{
+                                        int rowNumLatest = 1;
+                                    }
+                                    @foreach (var trans in (List<LoanTransaction>)ViewBag.LatestLicenses)
+                                    {
+                                        <tr>
+                                            <td>@rowNumLatest</td>
+                                            <td>@(trans.License != null ? trans.License.LicenseName : "Unknown")</td>
+                                            <td>@trans.RequestDate.ToString("yyyy-MM-dd")</td>
+                                            <td>@trans.DueDate.ToString("yyyy-MM-dd")</td>
+                                        </tr>
+                                        rowNumLatest++;
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                    else
+                    {
+                        <p>No recent transactions available..</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script src="~/js/chart.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var pieLabels = @Html.Raw(ViewBag.LicenseLabels);
+            var pieData = @Html.Raw(ViewBag.LicenseCounts);
+            new Chart(document.getElementById("myPieChart"), {
+                type: 'pie',
+                data: { labels: pieLabels, datasets: [{ data: pieData, backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#f6c23e', '#e74a3b', '#858796', '#5a5c69'] }] },
+                options: { maintainAspectRatio: false, plugins: { legend: { display: true, position: 'right' } } }
+            });
+
+            var trendLabels = @Html.Raw(ViewBag.TrendLabels);
+            var newLicensesData = @Html.Raw(ViewBag.NewLicensesData);
+            var expiredLicensesData = @Html.Raw(ViewBag.ExpiredLicensesData);
+            new Chart(document.getElementById("trendChart"), {
+                type: 'bar',
+                data: { labels: trendLabels, datasets: [
+                    { label: 'New Requests', data: newLicensesData, backgroundColor: 'rgba(78, 115, 223, 0.7)' },
+                    { label: 'Overdue Loans', data: expiredLicensesData, backgroundColor: 'rgba(231, 74, 59, 0.7)' }
+                ] },
+                options: { maintainAspectRatio: false, scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } }
+            });
+
+            var picLabels = @Html.Raw(ViewBag.PicLabels);
+            var picData = @Html.Raw(ViewBag.PicData);
+            new Chart(document.getElementById("picChart"), {
+                type: 'bar',
+                data: { labels: picLabels, datasets: [{ label: 'Processed Loans', data: picData, backgroundColor: '#36b9cc' }] },
+                options: { indexAxis: 'y', maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { ticks: { precision: 0 } } } }
+            });
+
+            var topLicensesLabels = @Html.Raw(ViewBag.TopLicensesLabels);
+            var topLicensesData = @Html.Raw(ViewBag.TopLicensesData);
+            new Chart(document.getElementById("topLicensesChart"), {
+                type: 'bar',
+                data: { labels: topLicensesLabels, datasets: [{ label: 'Total Qty', data: topLicensesData, backgroundColor: ['#4e73df','#1cc88a','#36b9cc','#f6c23e','#e74a3b'] }] },
+                options: { indexAxis: 'y', maintainAspectRatio: false, scales: { x: { ticks: { precision: 0 } } } }
+            });
+
+            var yearLabels = @Html.Raw(ViewBag.YearLabels);
+            var yearData = @Html.Raw(ViewBag.YearData);
+            new Chart(document.getElementById("yearlyChart"), {
+                type: 'line',
+                data: { labels: yearLabels, datasets: [{ label: 'Transactions per Year', data: yearData, fill: false, borderColor: '#36b9cc', tension: 0.1 }] },
+                options: { maintainAspectRatio: false, scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } }
+            });
+
+            var statusLabels = @Html.Raw(ViewBag.StatusApprovalLabels);
+            var statusData = @Html.Raw(ViewBag.StatusApprovalData);
+
+            var statusColors = {
+                "Pending": "#FE9900",
+                "Approved": "#28a745",
+                "Returned": "#007bff",
+                "Rejected": "#dc3545",
+            };
+
+            var backgroundColors = statusLabels.map(label => statusColors[label] || "#cccccc");
+
+            new Chart(document.getElementById("statusApprovalChart"), {
+                type: 'doughnut',
+                data: {
+                    labels: statusLabels,
+                    datasets: [{
+                        data: statusData,
+                        backgroundColor: backgroundColors
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+
+            var activeYearLabels = @Html.Raw(ViewBag.ActiveYearLabels);
+            var activeYearData = @Html.Raw(ViewBag.ActiveYearData);
+            var expiredYearData = @Html.Raw(ViewBag.ExpiredYearData);
+
+            new Chart(document.getElementById("stackedBarChart"), {
+                type: 'bar',
+                data: {
+                    labels: activeYearLabels,
+                    datasets: [
+                        { label: 'Active Loans', data: activeYearData, backgroundColor: '#1cc88a' },
+                        { label: 'Overdue Loans', data: expiredYearData, backgroundColor: '#e74a3b' }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { position: 'top' } },
+                    scales: {
+                        x: { stacked: true },
+                        y: { stacked: true, beginAtZero: true, ticks: { precision: 0 } }
+                    }
+                }
+            });
+            var reminderCount = @((ViewBag.ActiveReminders as List<ManagementSPD.Models.Notification>)?.Count ?? 0);
+
+            if (reminderCount > 0) {
+                setTimeout(function() {
+                    var myModal = new bootstrap.Modal(document.getElementById('reminderModal'));
+                    myModal.show();
+                }, 500);
+            }
+
+            $('#btnAck').click(function() {
+                $.post('/Notification/MarkAllRemindersAsRead', function() {
+                    console.log('Reminders marked as read.');
+                });
+
+            });
+        });
+    </script>
+}

@@ -1,0 +1,97 @@
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\appsettings.json
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\managament spd.staticwebassets.runtime.json
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\managament spd.staticwebassets.endpoints.json
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\managament spd.exe
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\managament spd.deps.json
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\managament spd.runtimeconfig.json
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\managament spd.dll
+C:\Users\pebhijrah\source\repos\managament spd\bin\Debug\net9.0\managament spd.pdb
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.AssemblyInfoInputs.cache
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.AssemblyInfo.cs
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.csproj.CoreCompileInputs.cache
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.RazorAssemblyInfo.cache
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.RazorAssemblyInfo.cs
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\rjimswa.dswa.cache.json
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\scopedcss\bundle\managament spd.styles.css
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\scopedcss\projectbundle\managament spd.bundle.scp.css
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\ytnjodajkz-nb0e9a54x0.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\gdbtq50qll-61n19gt1b8.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\726zkxutyt-xtxxf3hu2r.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\wv391g7rgj-bqjiyaj88i.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\otozqjst42-c2jlpeoesf.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\4zmt075hki-erw9l3u2r3.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\gj5qwa7uy3-aexeepp0ev.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\yej53t3jsw-d7shbmvgxk.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\iemdait6sm-ausgxo2sd3.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\f9xf0gxo8q-k8d9w2qqmf.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\1s49aejgjc-cosvhxvwiu.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\wloyog3y5r-ub07r2b239.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\7fyt41wdbx-fvhpjtyr6v.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\nda8vlpq5j-b7pk76d08c.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\a422svo54c-fsbi9cje9m.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\ipg2vm4suc-rzd6atqjts.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\jq6eezso0g-ee0r1s7dh0.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\ms0rttw86x-dxx9fxp4il.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\819a5cbkw9-jd9uben2k1.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\2x4puxfbxj-khv3u5hwcm.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\do49pwvdzf-r4e9w2rdcm.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\wd2wkim5h4-lcd1t2u6c8.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\xagt6iqvsw-c2oey78nd0.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\u7e3740ok3-tdbxkamptv.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\u1ry6noee2-j5mq2jizvt.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\x76fa7y9xz-06098lyss8.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\xscnmutxjj-nvvlpmu67g.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\c2glqcadq6-s35ty4nyc5.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\c4sl1u4mxy-pj5nd1wqec.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\ojy2vjnpnu-46ein0sx1k.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\9j85a69t43-v0zj4ognzu.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\58w45sb3rw-37tfw0ft22.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\emcyn818iz-hrwsygsryq.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\mc5hl5pi3y-pk9g2wxc8p.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\jkyf5isq4l-ft3s53vfgj.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\t14ziqzz5n-6cfz1n2cew.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\e7i0rsbkj0-6pdc2jztkx.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\8s95hh1e3k-493y06b0oq.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\imxtt9ocar-iovd86k7lj.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\d39mql9ybh-vr1egmr9el.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\a9euktzb3h-kbrnm935zg.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\1oqdtnmd87-jj8uyg4cgr.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\zc77n6mqu6-y7v9cxd14o.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\ywyj47feit-notf2xhcfb.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\1irm2r99ls-h1s4sie4z3.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\i4uobmorhb-63fj8s7r0e.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\vdmbvie3kw-0j3bgjxly4.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\rmejycf31l-47otxtyo56.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\l8qgh0josa-4v8eqarkd7.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\9ruzw60p3c-356vix0kms.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\nk9pxc1myd-83jwlth58m.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\nsi2st676h-mrlpezrjn3.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\6ki2l5rh57-lzl9nlhx6b.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\mx3bowhfck-ag7o75518u.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\tpydn3d5rb-x0q3zqp4vz.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\6cbvg4t1vg-0i3buxo5is.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\xzi11871n3-o1o13a6vjx.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\klfmi0cph8-ttgo8qnofa.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\gojnb1e3ew-2z0ns9nrw6.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\4pxjctd5v6-muycvpuwrr.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\5y4lvvef5m-87fc7y1x7t.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\7crr23kx5d-mlv21k5csn.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\jxg9nee730-3dbwv275ph.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\compressed\mgno37ew3t-3dbwv275ph.gz
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\staticwebassets.build.json.cache
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.dll
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\refint\managament spd.dll
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.pdb
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\managament spd.genruntimeconfig.cache
+C:\Users\pebhijrah\source\repos\managament spd\obj\Debug\net9.0\ref\managament spd.dll
